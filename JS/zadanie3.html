@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 3 — Listy i tabele</title>
+</head>
+<body>
+
+<h1>Listy i tabele w HTML</h1>
+
+<!-- LISTA NIEUPORZĄDKOWANA -->
+<h2>Zalety języka HTML</h2>
+<ul>
+  <li>Prosta składnia</li>
+  <li>Szerokie wsparcie przeglądarek</li>
+  <li>Semantyczna struktura treści</li>
+  <li>Łatwa integracja z CSS i JS</li>
+  <li>Dobra dostępność</li>
+</ul>
+
+<!-- LISTA UPORZĄDKOWANA -->
+<h2>Kroki tworzenia strony HTML</h2>
+<ol>
+  <li>Utworzenie pliku .html</li>
+  <li>Dodanie deklaracji DOCTYPE</li>
+  <li>Zbudowanie sekcji head</li>
+  <li>Dodanie treści w body</li>
+  <li>Test w przeglądarce</li>
+</ol>
+
+<!-- LISTA DEFINICJI -->
+<h2>Terminy HTML</h2>
+<dl>
+  <dt>HTML</dt>
+  <dd>Język znaczników do budowy stron WWW</dd>
+
+  <dt>Tag</dt>
+  <dd>Element składni HTML w nawiasach ostrych</dd>
+
+  <dt>Atrybut</dt>
+  <dd>Dodatkowa właściwość znacznika</dd>
+
+  <dt>Element</dt>
+  <dd>Tag wraz z zawartością</dd>
+
+  <dt>Semantyka</dt>
+  <dd>Znaczeniowy opis struktury treści</dd>
+</dl>
+
+<!-- LISTA ZAGNIEŻDŻONA -->
+<h2>Technologie webowe</h2>
+<ul>
+  <li>Frontend
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </li>
+  <li>Backend
+    <ul>
+      <li>Node.js</li>
+      <li>PHP</li>
+      <li>Python</li>
+    </ul>
+  </li>
+  <li>Bazy danych
+    <ul>
+      <li>MySQL</li>
+      <li>PostgreSQL</li>
+      <li>MongoDB</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- TABELA -->
+<h2>Tabela tagów HTML</h2>
+
+<table id="tagi-html" class="tabela-porownawcza" border="1">
+  <thead>
+    <tr>
+      <th>Nazwa tagu</th>
+      <th>Przeznaczenie</th>
+      <th>Przykład użycia</th>
+      <th>Czy wymaga zamknięcia?</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>&lt;p&gt;</td>
+      <td>Paragraf tekstu</td>
+      <td>&lt;p&gt;Tekst&lt;/p&gt;</td>
+      <td>Tak</td>
+    </tr>
+    <tr>
+      <td>&lt;a&gt;</td>
+      <td>Link</td>
+      <td>&lt;a href="#"&gt;Link&lt;/a&gt;</td>
+      <td>Tak</td>
+    </tr>
+    <tr>
+      <td>&lt;img&gt;</td>
+      <td>Obraz</td>
+      <td>&lt;img src="x.jpg" alt=""&gt;</td>
+      <td rowspan="2">Nie</td>
+    </tr>
+    <tr>
+      <td>&lt;br&gt;</td>
+      <td>Złamanie linii</td>
+      <td>&lt;br&gt;</td>
+    </tr>
+    <tr>
+      <td>&lt;strong&gt;</td>
+      <td>Ważny tekst</td>
+      <td>&lt;strong&gt;Ważne&lt;/strong&gt;</td>
+      <td>Tak</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td colspan="4">Tabela porównawcza podstawowych tagów HTML</td>
+    </tr>
+  </tfoot>
+</table>
+<script src="script3.js"></script>
+
+</body>
+</html>
