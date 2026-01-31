@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeria multimedialna — zadanie 4">
+  <meta name="author" content="Twoje Imię i Nazwisko">
+  <title>Zadanie 4 — Galeria multimedialna</title>
+</head>
+<body>
+
+<h1>Moja galeria multimedialna</h1>
+
+<!-- ===== SEKCJA OBRAZÓW (IMG) ===== -->
+<h2>Obrazy (img)</h2>
+
+<!-- 3 obrazy img z alt/width/height, jeden z loading="lazy" -->
+<img src="https://picsum.photos/300/200?random=11" alt="Losowy obraz 1" width="300" height="200">
+<img src="https://picsum.photos/300/200?random=12" alt="Losowy obraz 2 (lazy)" width="300" height="200" loading="lazy">
+<img src="https://picsum.photos/300/200?random=13" alt="Losowy obraz 3" width="300" height="200">
+
+<!-- ===== SEKCJA OBRAZÓW (FIGURE) ===== -->
+<h2>Obrazy (figure + figcaption)</h2>
+
+<!-- 2 obrazy w figure z podpisem -->
+<figure>
+  <img src="https://picsum.photos/320/210?random=21" alt="Obraz w figure 1" width="320" height="210">
+  <figcaption>Obraz 1 przedstawiony w elemencie figure (z podpisem).</figcaption>
+</figure>
+
+<figure>
+  <img src="https://picsum.photos/320/210?random=22" alt="Obraz w figure 2" width="320" height="210" loading="lazy">
+  <figcaption>Obraz 2 w figure — drugi przykład z figcaption.</figcaption>
+</figure>
+
+<hr>
+
+<!-- ===== SEKCJA WIDEO ===== -->
+<h2>Wideo</h2>
+
+<!-- Video: controls + 2 źródła (mp4/webm) + poster + tekst alternatywny -->
+<video controls width="480" poster="https://picsum.photos/480/270?random=31">
+  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm">
+  Twoja przeglądarka nie obsługuje elementu video.
+</video>
+
+<hr>
+
+<!-- ===== SEKCJA AUDIO ===== -->
+<h2>Audio</h2>
+
+<!-- Audio: controls + 2 źródła -->
+<audio controls>
+  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
+  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.ogg" type="audio/ogg">
+  Twoja przeglądarka nie obsługuje elementu audio.
+</audio>
+
+<hr>
+
+<!-- ===== OSADZONA TREŚĆ (MAPA) ===== -->
+<h2>Osadzona treść — mapa</h2>
+
+<!-- Iframe z mapą (bezpieczne atrybuty + lazy loading) -->
+<iframe
+  src="https://www.openstreetmap.org/export/embed.html?bbox=19.93%2C50.06%2C19.95%2C50.07&layer=mapnik"
+  width="600"
+  height="450"
+  loading="lazy"
+  referrerpolicy="no-referrer"
+  sandbox="allow-scripts allow-same-origin allow-popups"
+  title="Osadzona mapa">
+</iframe>

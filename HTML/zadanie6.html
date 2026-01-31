@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Semantyczny HTML — zadanie 6">
+  <meta name="author" content="Michał Żurek">
+  <title>Zadanie 6 — Semantyczny HTML</title>
+</head>
+<body>
+
+<header>
+  <h1>Blog technologiczny</h1>
+  <p>Aktualności i porady o HTML, CSS i JavaScript</p>
+</header>
+
+<nav aria-label="Nawigacja główna">
+  <ul>
+    <li><a href="#artykul">Artykuł</a></li>
+    <li><a href="#poboczne">Polecane</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <article id="artykul">
+    <header>
+      <h2>Semantyczny HTML — dlaczego ma znaczenie?</h2>
+      <p>
+        Data publikacji:
+        <time datetime="2026-01-12">12.01.2026</time>
+      </p>
+    </header>
+
+    <section>
+      <h3>Lepsza struktura dokumentu</h3>
+      <p>
+        Semantyczne znaczniki opisują rolę treści (nagłówek, nawigacja, artykuł), dzięki czemu kod jest
+        czytelniejszy i łatwiejszy do utrzymania.
+      </p>
+    </section>
+
+    <section>
+      <h3>SEO i dostępność</h3>
+      <p>
+        Wyszukiwarki i czytniki ekranu lepiej rozumieją stronę, gdy używa ona elementów takich jak
+        <strong>article</strong>, <strong>nav</strong> czy <strong>header</strong>.
+      </p>
+    </section>
+
+    <section>
+      <h3>Cytat i przykład</h3>
+
+      <blockquote>
+        „Najpierw sens, potem wygląd.”
+      </blockquote>
+
+      <pre>
+Przykład struktury:
+- header
+- nav
+- main
+- article/section
+- footer
+      </pre>
+    </section>
+
+  </article>
+
+  <aside id="poboczne">
+    <h2>Powiązane materiały</h2>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN — HTML</a></li>
+      <li><a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C Validator</a></li>
+    </ul>
+  </aside>
+
+</main>
+
+<footer id="kontakt">
+  <h2>Kontakt</h2>
+  <address>
+    Michał Żurek<br>
+    email: <a href="mailto:michal@example.com">michal@example.com</a>
+  </address>
+</footer>
+
+</body>
+</html>
