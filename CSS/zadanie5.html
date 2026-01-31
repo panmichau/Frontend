@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kompleksowy formularz kontaktowy — zadanie 5">
+  <meta name="author" content="Twoje Imię i Nazwisko">
+  <title>Zadanie 5 — Formularz kontaktowy</title>
+  <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+
+<h1>Formularz kontaktowy</h1>
+
+<form action="#" method="post" id="kontakt-form" class="formularz" data-form="kontakt">
+
+  <!-- ===== CZĘŚĆ A: PODSTAWOWE POLA ===== -->
+  <fieldset>
+    <legend>Podstawowe dane</legend>
+
+    <p>
+      <label for="imienazwisko">Imię i nazwisko:</label><br>
+      <input type="text" id="imienazwisko" name="imienazwisko" required minlength="3" maxlength="60">
+    </p>
+
+    <p>
+      <label for="email">Email:</label><br>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+        placeholder="np. jan.kowalski@example.com">
+    </p>
+
+    <p>
+      <label for="telefon">Telefon (opcjonalnie):</label><br>
+      <input
+        type="tel"
+        id="telefon"
+        name="telefon"
+        placeholder="+48 123 456 789"
+        pattern="^\+?[0-9\s\-]{7,20}$">
+    </p>
+
+    <p>
+      <label for="data-urodzenia">Data urodzenia:</label><br>
+      <input type="date" id="data-urodzenia" name="data_urodzenia" required>
+    </p>
+
+    <p>
+      <label for="haslo">Hasło:</label><br>
+      <input type="password" id="haslo" name="haslo" required minlength="8" maxlength="64">
+    </p>
+
+    <p>
+      <label for="haslo2">Potwierdź hasło:</label><br>
+      <input type="password" id="haslo2" name="haslo2" required minlength="8" maxlength="64">
+    </p>
+  </fieldset>
+
+  <!-- ===== CZĘŚĆ B: WYBORY ===== -->
+  <fieldset>
+    <legend>Wybory</legend>
+
+    <p>Płeć:</p>
+    <p>
+      <input type="radio" id="plec-k" name="plec" value="kobieta" required>
+      <label for="plec-k">Kobieta</label><br>
+
+      <input type="radio" id="plec-m" name="plec" value="mezczyzna">
+      <label for="plec-m">Mężczyzna</label><br>
+
+      <input type="radio" id="plec-i" name="plec" value="inna">
+      <label for="plec-i">Inna / nie chcę podawać</label>
+    </p>
+
+    <p>Zainteresowania (min. 5 opcji):</p>
+    <p>
+      <input type="checkbox" id="z1" name="zainteresowania" value="frontend">
+      <label for="z1">Frontend</label><br>
+
+      <input type="checkbox" id="z2" name="zainteresowania" value="backend">
+      <label for="z2">Backend</label><br>
+
+      <input type="checkbox" id="z3" name="zainteresowania" value="uiux">
+      <label for="z3">UI/UX</label><br>
+
+      <input type="checkbox" id="z4" name="zainteresowania" value="mobile">
+      <label for="z4">Aplikacje mobilne</label><br>
+
+      <input type="checkbox" id="z5" name="zainteresowania" value="ai">
+      <label for="z5">AI</label>
+    </p>
+
+    <p>
+      <label for="kraj">Kraj:</label><br>
+      <select id="kraj" name="kraj" required>
+        <option value="" selected disabled>Wybierz kraj</option>
+        <option value="pl">Polska</option>
+        <option value="de">Niemcy</option>
+        <option value="cz">Czechy</option>
+        <option value="sk">Słowacja</option>
+        <option value="gb">Wielka Brytania</option>
+        <option value="fr">Francja</option>
+        <option value="es">Hiszpania</option>
+        <option value="it">Włochy</option>
+        <option value="us">USA</option>
+        <option value="se">Szwecja</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="doswiadczenie">Poziom doświadczenia (0–10):</label><br>
+      <input type="range" id="doswiadczenie" name="doswiadczenie" min="0" max="10" value="5">
+    </p>
+  </fieldset>
+
+  <!-- ===== CZĘŚĆ C: ZAAWANSOWANE ===== -->
+  <fieldset>
+    <legend>Dodatkowe informacje</legend>
+
+    <p>
+      <label for="cv">Prześlij CV (PDF/DOC):</label><br>
+      <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+    </p>
+
+    <p>
+      <label for="wiadomosc">Wiadomość (max 500 znaków):</label><br>
+      <textarea id="wiadomosc" name="wiadomosc" rows="6" maxlength="500" placeholder="Wpisz wiadomość..."></textarea>
+    </p>
+
+    <p>
+      <label for="strona">Adres strony WWW (opcjonalnie):</label><br>
+      <input type="url" id="strona" name="strona" placeholder="https://example.com">
+    </p>
+
+    <p>
+      <input type="checkbox" id="zgoda" name="zgoda" required>
+      <label for="zgoda">Akceptuję regulamin (wymagane)</label>
+    </p>
+  </fieldset>
+
+  <!-- ===== CZĘŚĆ D: PRZYCISKI + DATA-* ===== -->
+  <p>
+    <button type="submit" data-action="submit">Wyślij</button>
+    <button type="reset" data-action="reset">Wyczyść</button>
+  </p>
+
+</form>
+
+</body>
+</html>

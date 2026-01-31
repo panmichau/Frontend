@@ -1,0 +1,16 @@
+/* Ten plik ma te same rodzaje stylów co <style> w head, ale inne wartości */
+
+body {
+  font-family: "Verdana", sans-serif;
+  background-color: #e8f4ff;
+}
+
+.opis {
+  padding: 14px;
+  border: 2px dashed #7aa7c7;
+}
+
+#naglowek {
+  letter-spacing: 2px;
+}
+

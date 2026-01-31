@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zadanie 4 — Galeria multimedialna (Rozszerzona)</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="header-overlay">
+      <h1>Moja galeria multimedialna</h1>
+    </div>
+  </header>
+
+  <aside class="social-sidebar">
+    <a href="#">FB</a>
+    <a href="#">IG</a>
+    <a href="#">YT</a>
+  </aside>
+
+  <main class="container">
+    
+    <section id="images">
+      <h2 class="sticky-header">Obrazy (img)</h2>
+      <div class="gallery-grid">
+        
+        <div class="card">
+          <span class="badge">Nowość</span>
+          <a href="#img1">
+            <img src="https://picsum.photos/300/200?random=11" alt="Obraz 1">
+            <div class="hover-overlay">Powiększ obraz</div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="#img2">
+            <img src="https://picsum.photos/300/200?random=12" alt="Obraz 2" loading="lazy">
+            <div class="hover-overlay">Szczegóły</div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="#img3">
+            <img src="https://picsum.photos/300/200?random=13" alt="Obraz 3">
+            <div class="hover-overlay">Zobacz</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+       <h2 class="sticky-header">Wideo i Audio</h2>
+       <div class="media-container">
+          <video controls width="480" poster="https://picsum.photos/480/270?random=31">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+          </video>
+       </div>
+    </section>
+
+  </main>
+
+  <a href="#" class="back-to-top">↑</a>
+
+  <div id="img1" class="lightbox">
+    <a href="#" class="lightbox-close">×</a>
+    <img src="https://picsum.photos/800/600?random=11" alt="Powiększenie 1">
+  </div>
+  <div id="img2" class="lightbox">
+    <a href="#" class="lightbox-close">×</a>
+    <img src="https://picsum.photos/800/600?random=12" alt="Powiększenie 2">
+  </div>
+  <div id="img3" class="lightbox">
+    <a href="#" class="lightbox-close">×</a>
+    <img src="https://picsum.photos/800/600?random=13" alt="Powiększenie 3">
+  </div>
+
+</body>
+</html>

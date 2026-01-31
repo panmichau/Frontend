@@ -1,0 +1,94 @@
+/* Box sizing do demonstracji */
+* {
+    box-sizing: border-box;
+}
+
+/* Lista nieuporządkowana – własny marker */
+ul {
+    list-style-type: square;
+}
+
+/* Padding i margin dla li */
+ul li {
+    padding: 6px 10px;
+    margin: 4px 0;
+}
+
+/* Tło co drugiego elementu */
+ul li:nth-child(even) {
+    background: #eef2ff;
+}
+
+/* Lista uporządkowana – inna numeracja + border */
+ol {
+    list-style-type: upper-roman;
+    border-left: 4px solid #6366f1;
+    padding-left: 18px;
+}
+
+/* Lista definicji – wyróżnienie dt */
+dt {
+    font-weight: bold;
+    font-size: 1.1rem;
+    background: #f1f5f9;
+    padding: 4px 6px;
+}
+
+/* Separator między definicjami */
+dd {
+    margin: 0 0 10px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #cbd5f1;
+}
+
+/* Tabela */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.12);
+}
+
+/* Nagłówki tabeli */
+thead th {
+    background: #1e293b;
+    color: #ffffff;
+    padding: 12px;
+    border-bottom: 3px solid #0f172a;
+    text-align: left;
+}
+
+/* Komórki */
+td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Zebra stripes */
+tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+/* Hover wiersza */
+tbody tr:hover {
+    background: #e0e7ff;
+}
+
+/* Box model demo */
+.box-demo {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #0ea5e9;
+    margin: 16px 0;
+}
+
+/* content-box vs border-box */
+.box-content {
+    box-sizing: content-box;
+    background: #fef3c7;
+}
+
+.box-border {
+    box-sizing: border-box;
+    background: #dcfce7;
+}
