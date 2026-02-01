@@ -1,0 +1,105 @@
+ body {
+
+margin: 0;
+
+display: flex;
+
+justify-content: center;
+
+min-height: 100vh;
+
+background-color: #f8f8f8;
+
+}
+
+
+
+.app {
+
+max-width: 600px;
+
+margin: 0 auto;
+
+padding: 20px;
+
+font-family: sans-serif;
+
+}
+
+
+
+.header {
+
+border-bottom: 1px solid #cb4242;
+
+margin-bottom: 20px;
+
+padding-bottom: 10px;
+
+}
+
+
+
+ul {
+
+list-style: none;
+
+padding: 0;
+
+}
+
+
+li {
+
+display: flex;
+
+align-items: center;
+
+gap: 10px;
+
+margin-bottom: 8px;
+
+padding: 5px;
+
+background: #9b9ba1;
+
+border-radius: 4px;
+
+}
+
+
+button {
+
+background-color: #ff4d4d;
+
+color: white;
+
+border: none;
+
+padding: 5px 10px;
+
+cursor: pointer;
+
+border-radius: 4px;
+
+}
+
+
+button:hover {
+
+background-color: #cc0000;
+
+} 
+.badge {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-left: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.cat-praca { background-color: #ff4757; }
+.cat-dom { background-color: #2ed573; }
+.cat-zakupy { background-color: #1e90ff; }
+.cat-inne { background-color: #747d8c; }
